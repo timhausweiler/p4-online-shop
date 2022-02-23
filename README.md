@@ -34,7 +34,7 @@ The MVP would fulfill all of the minimum requirements of our P4. As such users w
 - browse the range of products being offered in ths shop
 - create and edit a user account
 - offer their own products and edit them after the initial creation and
-- leave reviews for all the products being offered
+- leave, edit and delete reviews for all the products being offered
 -
 
 <br>
@@ -47,21 +47,20 @@ In the future I would like to expand the shops functionality continuously - some
 - Wishlist functionality: add products to a wishlist
 - Sort products by different properties
 - Filter products by different properties
-- A user section: edit profile,
+- A user section: see previous orders, edit profile
+- Restriction to posting products to an admin user
 
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|    Library    | Description           |
+| :-----------: | :-------------------- |
+|     React     | Frontend              |
+| React Router  | Frontend routes       |
+| Ruby on Rails | Backend functionality |
+|    Flexbox    | Frontend styling      |
+|     Axios     | API calls             |
 
 <br>
 
