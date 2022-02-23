@@ -3,7 +3,9 @@
 - [Overview](#overview)
 - [MVP](#mvp)
 - [Post-MVP](#post-mvp)
-- [Libraries and Dependencies](#libraries-and-dependencies)
+- [Technical setup](#technical-setup)
+  - [Libraries and Dependencies] (libraries-and-dependencies)
+  - [Wireframes] (#wireframes)
 
 <br>
 
@@ -15,28 +17,29 @@ I was thinking about what to do for my P4 for a while because I would want it to
 
 ## MVP
 
-The MVP would fulfill all of the minimum requirements of our P4. As such users will be able to
+The MVP will fulfill all of the minimum requirements of our P4. As such users will be able to
 
 - browse the range of products being offered in ths shop
 - create and edit a user account
 - offer their own products and edit them after the initial creation and
 - leave, edit and delete reviews for all the products being offered
--
 
 <br>
 
-### Post-MVP
+## Post-MVP
 
-In the future I would like to expand the shops functionality continuously - some ideas for additional functions include:
+In the future I would like to expand the shop's functionality continuously - some ideas for additional functions include:
 
 - Basket functionality: add products to a basket
 - Wishlist functionality: add products to a wishlist
 - Sort products by different properties
 - Filter products by different properties
-- A user section: see previous orders, edit profile
+- A user section: see previous orders, edit profile, ...
 - Restriction to posting products to an admin user
 
 <br>
+
+## Technical setup
 
 ### Libraries and Dependencies
 
@@ -50,13 +53,9 @@ In the future I would like to expand the shops functionality continuously - some
 
 <br>
 
-### Client (Front End)
+### Wireframes
 
-#### Wireframes
-
-- Desktop Landing
-
-- Mobile Resource Index
+Please find the wireframes for the different views [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.p).
 
 #### Component Tree
 
