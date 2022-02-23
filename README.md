@@ -1,23 +1,9 @@
 # Tim Hausweiler - Project 4: Online Shop
 
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
-
 - [Overview](#overview)
 - [MVP](#mvp)
-  - [Goals](#goals)
-  - [Libraries and Dependencies](#libraries-and-dependencies)
-  - [Client (Front End)](#client-front-end)
-    - [Wireframes](#wireframes)
-    - [Component Tree](#component-tree)
-    - [Component Architecture](#component-architecture)
-    - [Time Estimates](#time-estimates)
-  - [Server (Back End)](#server-back-end)
-    - [ERD Model](#erd-model)
 - [Post-MVP](#post-mvp)
-- [Code Showcase](#code-showcase)
-- [Code Issues & Resolutions](#code-issues--resolutions)
+- [Libraries and Dependencies](#libraries-and-dependencies)
 
 <br>
 
@@ -68,35 +54,11 @@ In the future I would like to expand the shops functionality continuously - some
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
-![Dummy Link](url)
-
 - Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
 
 - Mobile Resource Index
 
 #### Component Tree
-
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
 
 [Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
 
