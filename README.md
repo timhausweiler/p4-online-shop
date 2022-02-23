@@ -32,15 +32,22 @@ I was thinking about what to do for my P4 for a while because I would want it to
 The MVP would fulfill all of the minimum requirements of our P4. As such users will be able to
 
 - browse the range of products being offered in ths shop
-- create a user account
-- offer their own products and
+- create and edit a user account
+- offer their own products and edit them after the initial creation and
 - leave reviews for all the products being offered
+-
 
 <br>
 
 ### Post-MVP
 
-In the
+In the future I would like to expand the shops functionality continuously - some ideas for additional functions include:
+
+- Basket functionality: add products to a basket
+- Wishlist functionality: add products to a wishlist
+- Sort products by different properties
+- Filter products by different properties
+- A user section: edit profile,
 
 <br>
 
