@@ -1,4 +1,4 @@
-# PROJECT 4 README <!-- omit in toc -->
+# Tim Hausweiler - Project 4: Online Shop
 
 > The Project Planning section **should be completed** for your project pitch with instructors.
 >
@@ -23,26 +23,24 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
+I was thinking about what to do for my P4 for a while because I would want it to be a project that I can keep working on even after the completion of our course. The plan would be to build an MVP-version of the shop that fulfills all of the requirements for my P4 and to improve it with all different kinds of functions in the future.
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+The MVP would fulfill all of the minimum requirements of our P4. As such users will be able to
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+- browse the range of products being offered in ths shop
+- create a user account
+- offer their own products and
+- leave reviews for all the products being offered
 
 <br>
 
-### Goals
+### Post-MVP
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+In the
 
 <br>
 
@@ -98,9 +96,9 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.
 
-``` structure
+```structure
 
 src
 |__ assets/
@@ -137,13 +135,13 @@ src
 [ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
 <br>
 
-***
+---
 
 ## Post-MVP
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
-***
+---
 
 ## Code Showcase
 
