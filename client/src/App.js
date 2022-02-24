@@ -17,6 +17,10 @@ function App() {
     getUser()
   }, [])
 
+  const logout = () => {
+    localStorage.removeItem('authToken')
+    setCurrentUser(null)
+  }
 
   return (
     <div className="App">
