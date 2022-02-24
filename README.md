@@ -34,13 +34,14 @@ The MVP will fulfill all of the minimum requirements of our P4. As such users wi
 
 In the future I would like to expand the shop's functionality continuously - some ideas for additional functions include:
 
+- Sort products by different properties
+- Filter products by different properties
+- Restriction to posting products to an admin user
 - Basket functionality: add products to a basket
 - Wishlist functionality: add products to a wishlist
 - Checkout process
-- Sort products by different properties
-- Filter products by different properties
+- Purchase history
 - A user section: see previous orders, edit profile, ...
-- Restriction to posting products to an admin user
 
 <br>
 
