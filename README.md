@@ -3,9 +3,9 @@
 - [Overview](#overview)
 - [MVP](#mvp)
 - [Post-MVP](#post-mvp)
-- [Technical setup](#technical-setup)
-  - [Libraries and Dependencies] (libraries-and-dependencies)
-  - [Wireframes] (#wireframes)
+- [Setup](#technical-setup)
+  - [Libraries and Dependencies](libraries-and-dependencies)
+  - [Wireframes](#wireframes)
 
 <br>
 
@@ -39,7 +39,7 @@ In the future I would like to expand the shop's functionality continuously - som
 
 <br>
 
-## Technical setup
+## Setup
 
 ### Libraries and Dependencies
 
@@ -57,9 +57,9 @@ In the future I would like to expand the shop's functionality continuously - som
 
 Please find the wireframes for the different views [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.p).
 
-#### Component Tree
+### Component Tree
 
-[Component Tree Sample](https://gist.git.generalassemb.ly/davidtwhitlatch/414107e2560ae0bb65e233570f2fe056#file-component-tree-png)
+Please find the Component Tree [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.g11707c61e37_0_0).
 
 #### Component Architecture
 
