@@ -36,6 +36,7 @@ In the future I would like to expand the shop's functionality continuously - som
 
 - Basket functionality: add products to a basket
 - Wishlist functionality: add products to a wishlist
+- Checkout process
 - Sort products by different properties
 - Filter products by different properties
 - A user section: see previous orders, edit profile, ...
