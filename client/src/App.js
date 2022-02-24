@@ -25,6 +25,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
+        <Route path='/' element={<div>Welcome!</div>}/>
         <Route path='/login' element={<Login setCurrentUser={setCurrentUser} />} />
       </Routes>
     </div>
