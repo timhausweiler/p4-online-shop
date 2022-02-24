@@ -10,7 +10,6 @@
 - [Time estimates](#time-estimates)
 - [ERD model](#erd-model)
 - [Code showcase](#code-showcase)
-- [Code showcase](#code-showcase)
 
 <br>
 
@@ -60,7 +59,7 @@ In the future I would like to expand the shop's functionality continuously - som
 
 ### Wireframes
 
-Please find the wireframes for the different desktop views [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.p). Wireframes for mobile views available [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.g11707c61e37_0_115)
+Please find the wireframes for the different desktop views [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.p). Wireframes for mobile views available [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.g11707c61e37_0_115).
 
 <br>
 
