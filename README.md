@@ -60,7 +60,7 @@ In the future I would like to expand the shop's functionality continuously - som
 
 ### Wireframes
 
-Please find the wireframes for the different views [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.p).
+Please find the wireframes for the different desktop views [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.p). Wireframes for mobile views available [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.g11707c61e37_0_115)
 
 <br>
 
@@ -89,7 +89,7 @@ Please find the Component Tree [here](https://docs.google.com/presentation/d/1AO
 
 ## ERD Model
 
-Please find the ERD [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.g11707c61e37_0_64)
+Please find the ERD model [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.g11707c61e37_0_64)
 <br>
 
 ## Code Showcase
