@@ -6,6 +6,11 @@
 - [Setup](#technical-setup)
   - [Libraries and Dependencies](libraries-and-dependencies)
   - [Wireframes](#wireframes)
+- [Component Tree](#component-tree)
+- [Time estimates](#time-estimates)
+- [ERD model](#erd-model)
+- [Code showcase](#code-showcase)
+- [Code showcase](#code-showcase)
 
 <br>
 
@@ -57,63 +62,37 @@ In the future I would like to expand the shop's functionality continuously - som
 
 Please find the wireframes for the different views [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.p).
 
+<br>
+
 ### Component Tree
 
 Please find the Component Tree [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.g11707c61e37_0_0).
 
-#### Component Architecture
+<br>
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.
+## Time Estimates
 
-```structure
-
-src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-|__ services/
-
-```
-
-#### Time Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| Task                      | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Backend functionality     |    H     |     6 hrs      |      TBD      |     TBD     |
+| Backend deployment        |    H     |     3 hrs      |      TBD      |     TBD     |
+| API Calls                 |    H     |     3 hrs      |      TBD      |     TBD     |
+| User functionality & Auth |    H     |     6 hrs      |      TBD      |     TBD     |
+| Product functionality     |    H     |     6 hrs      |      TBD      |     TBD     |
+| Review functionality      |    H     |     4 hrs      |      TBD      |     TBD     |
+| Styling                   |    H     |     6 hrs      |      TBD      |     TBD     |
+| Frontend deployment       |    H     |     4 hrs      |      TBD      |     TBD     |
+| Bug fixes                 |    H     |     4 hrs      |      TBD      |     TBD     |
+| Total                     |    H     |     42 hrs     |      TBD      |     TBD     |
 
 <br>
 
-### Server (Back End)
+## ERD Model
 
-#### ERD Model
-
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+Please find the ERD [here](https://docs.google.com/presentation/d/1AOT1QSE50i93WtLJ4hEP-0BHqaYKHXdDc5tmuaDgWc8/edit#slide=id.g11707c61e37_0_64)
 <br>
-
----
-
-## Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
-
----
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
-## Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution.
+Coming up.
+<br>
