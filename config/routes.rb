@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   end
 
   get '/users/:user_id/products', to: 'products#get_user_products'
-  # get '/reviews', to: 'reviews#get_all_reviews' // tbd - seems like this one is already included in the nested routes above
+  get '/reviews', to: 'reviews#get_all_reviews'
 
   post '/auth/login', to: 'authentications#login'
   get '/auth/verify', to: 'authentications#verify'
