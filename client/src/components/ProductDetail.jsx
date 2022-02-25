@@ -35,33 +35,39 @@ export default function ProductDetail(props) {
   }
 
   return (
-    <div>
-      {
-        product?.id ? 
-          <>
-            <img src={product.image_url} />
-            <h2>{product.title}</h2>
-            <h3>${product.price}</h3>
-            <p>{product.description}</p>
-            
-            {
-              props.currentUser?.id === product.user_id ?
-              <>
-                  <Link to={`/products/${product.id}/edit`}><button>Edit</button></Link>
+    <div className='detail-master-container'>
+      <div className='detail-container'>
+        {
+          product?.id ?
+            <>
+              <img src={product.image_url} className='detail-image' />
+              <div className='detail-info'>
+                <h2>{product.title}</h2>
+                <p>{product.description}</p>
+                <div className='checkout-info'>
+                  <h3 className='detail-price'>${product.price}</h3>
+                  <button className='buy-button'>Buy</button>
+                </div>
+                {/* <ReviewCreate handleReviewCreate={handleReviewCreate}/> */}
+              </div>
+              {/* {
+                props.currentUser?.id === product.user_id ?
+                <>
+                <Link to={`/products/${product.id}/edit`}><button>Edit</button></Link>
                 <button onClick={() => props.handleDelete(product.id)}>Delete</button>
-              </>
-              :
-              null
-            }
-            <ReviewCreate handleReviewCreate={handleReviewCreate}/>
-            <Reviews
+                </>
+                :
+                null
+                } */}
+              {/* <Reviews
               reviews={reviews}
               currentUser={props.currentUser}
-              handleReviewDelete={handleReviewDelete}/>
-          </>
-          :
-          <h3>Sorry, no product found.</h3>
-      }
+              handleReviewDelete={handleReviewDelete}/> */}
+            </>
+            :
+            <h3>Sorry, no product found.</h3>
+        }
+      </div>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import Login from './components/Login'
 import Register from './components/Register'
 import Navbar from './components/Navbar'
 import ProductsContainer from './components/ProductsContainer'
+import { getAllProducts } from './services/products';
 
 function App() {
 
@@ -23,6 +24,17 @@ function App() {
     localStorage.removeItem('authToken')
     setCurrentUser(null)
   }
+
+  const [products, setProducts] = useState([])
+  const [toggle, setToggle] = useState(false)
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const products = await getAllProducts()
+      setProducts(products)
+    }
+    fetchProducts()
+  }, [toggle])
 
 
   return (
@@ -43,6 +55,22 @@ function App() {
             </div>
             </div>
             <h2>New on the Google Store.</h2>
+            <div className='master-preview-container'>
+    <div className='preview-container'>
+      {/* { props.currentUser &&
+        <Link to='/products/create'>Create A Product!!</Link>
+      } */}
+      {
+      products.map(product => (
+        <Link key={product.id} to={`/products/${product.id}`} className='preview' style={{ textDecoration: 'none' }}>
+          <img src={product.image_url} alt={product.title} className='preview-image'/>
+          <h3 className='preview-title'>{product.title}</h3>
+          <p className='preview-price'>From ${product.price}</p>
+        </Link>
+      ))
+      }
+    </div>
+  </div>
           </>} />
         <Route path='/login' element={<Login setCurrentUser={setCurrentUser}/>} />
         <Route path='/register' element={<Register setCurrentUser={setCurrentUser}/>} />

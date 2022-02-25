@@ -11,10 +11,10 @@ export default function Products(props) {
       } */}
       {
       props.products.map(product => (
-        <Link key={product.id} to={`/products/${product.id}`} className='card'>
+        <Link key={product.id} to={`/products/${product.id}`} className='card' style={{ textDecoration: 'none' }}>
           <img src={product.image_url} alt={product.title} />
           <h3 className='card-title'>{product.title}</h3>
-          <h4 className='card-price'>From ${product.price}</h4>
+          <p className='card-price'>From ${product.price}</p>
         </Link>
       ))
       }
