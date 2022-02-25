@@ -13,6 +13,7 @@ export default function ProductDetail(props) {
   const [reviews, setReviews] = useState([]);
   const [toggle, setToggle] = useState(false);
   const [openToggle, setOpenToggle] = useState(false);
+  const [openReviews, setOpenReviews] = useState(false);
   const { id } = useParams();
 
   useEffect(() => {
@@ -66,18 +67,24 @@ export default function ProductDetail(props) {
           <h3>Sorry, no product found.</h3>
         )}
       </div>
-      <h2>See what others had to say about it.</h2>
-      <Reviews
-        reviews={reviews}
-        currentUser={props.currentUser}
-        handleReviewDelete={handleReviewDelete}
-      />
-      <span
-        onClick={(e) => setOpenToggle((prevToggle) => !prevToggle)}
-        className="review-opener"
-      >
-        Are you a fan too? Leave a review.
-      </span>
+      <h2 onClick={(e) => setOpenReviews((prevToggle) => !prevToggle)}>
+        See what others had to say about it.
+      </h2>
+      {openReviews ? (
+        <>
+          <Reviews
+            reviews={reviews}
+            currentUser={props.currentUser}
+            handleReviewDelete={handleReviewDelete}
+          />
+          <span
+            onClick={(e) => setOpenToggle((prevToggle) => !prevToggle)}
+            className="review-opener"
+          >
+            Are you a fan too? Leave a review.
+          </span>
+        </>
+      ) : null}
       {openToggle ? (
         <ReviewCreate
           handleReviewCreate={handleReviewCreate}
