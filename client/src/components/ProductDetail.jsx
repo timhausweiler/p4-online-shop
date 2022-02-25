@@ -48,7 +48,6 @@ export default function ProductDetail(props) {
                   <h3 className='detail-price'>${product.price}</h3>
                   <button className='buy-button'>Buy</button>
                 </div>
-                {/* <ReviewCreate handleReviewCreate={handleReviewCreate}/> */}
               </div>
               {/* {
                 props.currentUser?.id === product.user_id ?
@@ -58,16 +57,18 @@ export default function ProductDetail(props) {
                 </>
                 :
                 null
-                } */}
+              } */}
               {/* <Reviews
               reviews={reviews}
               currentUser={props.currentUser}
-              handleReviewDelete={handleReviewDelete}/> */}
+            handleReviewDelete={handleReviewDelete}/> */}
             </>
             :
             <h3>Sorry, no product found.</h3>
-        }
+          }
       </div>
+          <h2>Already a fan? Review this product.</h2>
+          <ReviewCreate handleReviewCreate={handleReviewCreate}/>
     </div>
   )
 }
