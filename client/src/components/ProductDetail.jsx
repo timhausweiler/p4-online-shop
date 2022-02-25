@@ -72,9 +72,12 @@ export default function ProductDetail(props) {
         currentUser={props.currentUser}
         handleReviewDelete={handleReviewDelete}
       />
-      <p onClick={(e) => setOpenToggle((prevToggle) => !prevToggle)}>
+      <span
+        onClick={(e) => setOpenToggle((prevToggle) => !prevToggle)}
+        className="review-opener"
+      >
         Are you a fan too? Leave a review.
-      </p>
+      </span>
       {openToggle ? (
         <ReviewCreate
           handleReviewCreate={handleReviewCreate}
