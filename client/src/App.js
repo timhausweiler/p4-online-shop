@@ -34,9 +34,10 @@ function App() {
             <div className='banner-master-container'>
             <div className='banner-container'>
               <div className='banner-text-container'>
-                <h1>The new Pixel 6 phones are here.</h1>
+                <Link to ="/products/2" style={{ textDecoration: 'none' }}><h1>The new Pixel 6 phones are here.</h1>
                 <p>Powered by Google Tensor, Google’s first custom-built processor, they’re fast and secure. And they adapt to you.</p>
-                <button>Learn more</button>
+                    <button>Learn more</button>
+                </Link>
               </div>
               <img src="https://i.imgur.com/oBzbXfa.png" className='banner-image'/>
             </div>
