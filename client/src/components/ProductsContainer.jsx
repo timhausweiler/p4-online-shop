@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react'
 import { Link, Routes, Route, useNavigate } from 'react-router-dom'
 import { getAllProducts, deleteProduct, updateProduct } from '../services/products'
+import { createProduct } from '../services/products'
+
 import ProductDetail from './ProductDetail'
 import Products from './Products'
 import ProductCreate from './ProductCreate'
-import { createProduct } from '../services/products'
 import ProductEdit from './ProductEdit'
 
 export default function ProductsContainer(props) {
