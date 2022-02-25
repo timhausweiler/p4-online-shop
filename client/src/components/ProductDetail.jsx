@@ -1,58 +1,58 @@
-import { useEffect, useState } from 'react'
-import { useParams, Link } from 'react-router-dom'
-import Reviews from './Reviews'
-import ReviewCreate from './ReviewCreate'
-import { getProductReviews, createReview, deleteReview } from '../services/reviews'
+import { useEffect, useState } from "react";
+import { useParams, Link } from "react-router-dom";
+import Reviews from "./Reviews";
+import ReviewCreate from "./ReviewCreate";
+import {
+  getProductReviews,
+  createReview,
+  deleteReview,
+} from "../services/reviews";
 
 export default function ProductDetail(props) {
-
-  const [product, setProduct] = useState({})
-  const [reviews, setReviews] = useState([])
-  const [toggle, setToggle] = useState(false)
-  const [openToggle, setOpenToggle] = useState(false)
-  const { id } = useParams()
+  const [product, setProduct] = useState({});
+  const [reviews, setReviews] = useState([]);
+  const [toggle, setToggle] = useState(false);
+  const [openToggle, setOpenToggle] = useState(false);
+  const { id } = useParams();
 
   useEffect(() => {
-    const foundProduct = props.products.find(product => {
-      return product.id === parseInt(id)
-    })
+    const foundProduct = props.products.find((product) => {
+      return product.id === parseInt(id);
+    });
 
     const fetchReviews = async () => {
-      const reviews = await getProductReviews(id)
-      setReviews(reviews)
-    }
-    fetchReviews()
-    setProduct(foundProduct)
-  }, [id, props.products, toggle])
+      const reviews = await getProductReviews(id);
+      setReviews(reviews);
+    };
+    fetchReviews();
+    setProduct(foundProduct);
+  }, [id, props.products, toggle]);
 
-  const handleReviewCreate = async(formData) => {
-    await createReview(id, formData)
-    setToggle(prevToggle => !prevToggle)
-  }
-  
+  const handleReviewCreate = async (formData) => {
+    await createReview(id, formData);
+    setToggle((prevToggle) => !prevToggle);
+  };
+
   const handleReviewDelete = async (review_id) => {
-    await deleteReview(id, review_id)
-    setToggle(prevToggle => !prevToggle)
-  }
-
-
+    await deleteReview(id, review_id);
+    setToggle((prevToggle) => !prevToggle);
+  };
 
   return (
-    <div className='detail-master-container'>
-      <div className='detail-container'>
-        {
-          product?.id ?
-            <>
-              <img src={product.image_url} className='detail-image' />
-              <div className='detail-info'>
-                <h2>{product.title}</h2>
-                <p>{product.description}</p>
-                <div className='checkout-info'>
-                  <h3 className='detail-price'>${product.price}</h3>
-                  <button className='buy-button'>Buy</button>
-                </div>
+    <div className="detail-master-container">
+      <div className="detail-container">
+        {product?.id ? (
+          <>
+            <img src={product.image_url} className="detail-image" />
+            <div className="detail-info">
+              <h2>{product.title}</h2>
+              <p>{product.description}</p>
+              <div className="checkout-info">
+                <h3 className="detail-price">${product.price}</h3>
+                <button className="buy-button">Buy</button>
               </div>
-              {/* {
+            </div>
+            {/* {
                 props.currentUser?.id === product.user_id ?
                 <>
                 <Link to={`/products/${product.id}/edit`}><button>Edit</button></Link>
@@ -61,19 +61,26 @@ export default function ProductDetail(props) {
                 :
                 null
               } */}
-            </>
-            :
-            <h3>Sorry, no product found.</h3>
-          }
+          </>
+        ) : (
+          <h3>Sorry, no product found.</h3>
+        )}
       </div>
       <h2>See what others had to say about it.</h2>
       <Reviews
-      reviews={reviews}
-      currentUser={props.currentUser}
-    handleReviewDelete={handleReviewDelete}/>
-      <p onClick={(e) => setOpenToggle(prevToggle => !prevToggle)}>Are you a fan too? Leave a review.</p>
-      {openToggle? 
-        <ReviewCreate handleReviewCreate={handleReviewCreate} setOpenToggle={setOpenToggle}/> : null}
+        reviews={reviews}
+        currentUser={props.currentUser}
+        handleReviewDelete={handleReviewDelete}
+      />
+      <p onClick={(e) => setOpenToggle((prevToggle) => !prevToggle)}>
+        Are you a fan too? Leave a review.
+      </p>
+      {openToggle ? (
+        <ReviewCreate
+          handleReviewCreate={handleReviewCreate}
+          setOpenToggle={setOpenToggle}
+        />
+      ) : null}
     </div>
-  )
+  );
 }
