@@ -34,7 +34,7 @@ export default function Navbar(props) {
       {props.currentUser ?
         <>
           <h3 onClick={props.logout} className = "log-out">
-            {props.currentUser.first_name.substring(0, 1)}{props.currentUser.last_name.substring(0, 1)}
+                {props.currentUser.first_name.substring(0, 1).toUpperCase()}
           </h3>
         </>
         :

@@ -110,7 +110,7 @@ h1 {
 }
 
 h2 {
-  margin: 50px 10px 30px 10px;
+  margin: 70px 10px 30px 10px;
   color: #353535;
   text-decoration: none;
   font-size: 30px;
@@ -126,4 +126,51 @@ button {
   outline: none;
   padding: 10px 20px;
   border-radius: 4px;
+}
+
+.banner-image {
+  width: 550px;
+}
+
+.log-out {
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+
+  border-radius: 30px; /* or 50% */
+
+  background-color: orange;
+  color: white;
+}
+
+.master-card-container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 350px;
+  box-sizing: border-box;
+}
+
+.card-title {
+  color: #353535;
+  text-align: left;
+  text-indent: 30px;
+}
+
+.card-price {
+  text-indent: 30px;
+  color: #353535;
+  margin: 30px 0 50px 0;
+  text-align: left;
 }

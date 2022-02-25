@@ -38,7 +38,7 @@ function App() {
                 <p>Powered by Google Tensor, Google’s first custom-built processor, they’re fast and secure. And they adapt to you.</p>
                 <button>Learn more</button>
               </div>
-              <img src="https://i.imgur.com/oBzbXfa.png" />
+              <img src="https://i.imgur.com/oBzbXfa.png" className='banner-image'/>
             </div>
             </div>
             <h2>New on the Google Store.</h2>
