@@ -1,11 +1,11 @@
 import './App.css';
 import { useEffect, useState } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Link } from 'react-router-dom'
 import { verifyUser } from './services/users';
-
-import Login from './components/Login';
-import Register from './components/Register';
-import ProductsContainer from './components/ProductsContainer';
+import Login from './components/Login'
+import Register from './components/Register'
+import Navbar from './components/Navbar'
+import ProductsContainer from './components/ProductsContainer'
 
 function App() {
 
@@ -18,18 +18,20 @@ function App() {
     }
     getUser()
   }, [])
-  
+
   const logout = () => {
     localStorage.removeItem('authToken')
     setCurrentUser(null)
   }
 
+
   return (
     <div className="App">
+      <Navbar currentUser={currentUser} logout={logout}/>
       <Routes>
-        <Route path='/' element={<div>Welcome!</div>}/>
-        <Route path='/login' element={<Login setCurrentUser={setCurrentUser} />} />
-        <Route path='/register' element={<Register setCurrentUser={setCurrentUser} />} />
+        <Route path='/' element={<h1>HELLO!!</h1>} />
+        <Route path='/login' element={<Login setCurrentUser={setCurrentUser}/>} />
+        <Route path='/register' element={<Register setCurrentUser={setCurrentUser}/>} />
         <Route path='/products/*' element={<ProductsContainer currentUser={currentUser}/>} />
       </Routes>
     </div>
