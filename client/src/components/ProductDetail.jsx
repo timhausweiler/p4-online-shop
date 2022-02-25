@@ -9,6 +9,7 @@ export default function ProductDetail(props) {
   const [product, setProduct] = useState({})
   const [reviews, setReviews] = useState([])
   const [toggle, setToggle] = useState(false)
+  const [openToggle, setOpenToggle] = useState(false)
   const { id } = useParams()
 
   useEffect(() => {
@@ -28,11 +29,13 @@ export default function ProductDetail(props) {
     await createReview(id, formData)
     setToggle(prevToggle => !prevToggle)
   }
-
+  
   const handleReviewDelete = async (review_id) => {
     await deleteReview(id, review_id)
     setToggle(prevToggle => !prevToggle)
   }
+
+
 
   return (
     <div className='detail-master-container'>
@@ -58,17 +61,19 @@ export default function ProductDetail(props) {
                 :
                 null
               } */}
-              {/* <Reviews
-              reviews={reviews}
-              currentUser={props.currentUser}
-            handleReviewDelete={handleReviewDelete}/> */}
             </>
             :
             <h3>Sorry, no product found.</h3>
           }
       </div>
-          <h2>Already a fan? Review this product.</h2>
-          <ReviewCreate handleReviewCreate={handleReviewCreate}/>
+      <h2>See what others had to say about it.</h2>
+      <Reviews
+      reviews={reviews}
+      currentUser={props.currentUser}
+    handleReviewDelete={handleReviewDelete}/>
+      <p onClick={(e) => setOpenToggle(prevToggle => !prevToggle)}>Are you a fan too? Leave a review.</p>
+      {openToggle? 
+        <ReviewCreate handleReviewCreate={handleReviewCreate} setOpenToggle={setOpenToggle}/> : null}
     </div>
   )
 }

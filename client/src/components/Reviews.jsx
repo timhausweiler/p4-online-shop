@@ -6,11 +6,7 @@ export default function Reviews(props) {
       {props.reviews && 
         props.reviews.map(review => (
           <div key={review.id}>
-            <h3>{review.title}</h3>
-            <h4>Author: {review.user.username}</h4>
-            <h5>{review.stars} stars</h5>
-            <p>{review.content}</p>
-
+            <p><span>{review.title} ({review.stars} stars)</span>: {review.content} ({review.user.first_name} {review.user.last_name.charAt(0)}.)</p>
             {
               props.currentUser?.id === review.user_id ? 
                 <>

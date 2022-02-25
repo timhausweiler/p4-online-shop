@@ -14,11 +14,15 @@ export default function ReviewCreate(props) {
         content
       }
       props.handleReviewCreate(review)
+      props.setOpenToggle(prevToggle => !prevToggle)
     }}>
-      <input type="text" value={title} onChange={(e)=>setTitle(e.target.value)}/>
-      <input type="number" value={stars} onChange={(e) => setStars(e.target.valueAsNumber)} />
-      <input type="text" value={content} onChange={(e) => setContent(e.target.value)} />
-      <button>Review it!</button>
+      Title <br/>
+      <input type="text" value={title} onChange={(e)=>setTitle(e.target.value)}/><br/>
+      Stars <br/>
+      <input type="number" value={stars} onChange={(e) => setStars(e.target.valueAsNumber)} /><br/>
+      Review <br/>
+      <input type="text" value={content} onChange={(e) => setContent(e.target.value)} /><br/>
+      <button>Submit review</button>
     </form>
   )
 }

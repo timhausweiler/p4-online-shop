@@ -251,3 +251,7 @@ button {
   border: none;
   font-size: 20px;
 }
+
+span {
+  font-weight: 1000;
+}
