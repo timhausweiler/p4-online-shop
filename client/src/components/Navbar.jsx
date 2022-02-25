@@ -3,29 +3,34 @@ import {Link} from 'react-router-dom'
 
 export default function Navbar(props) {
   return (
+    <div className='master-navbar-container'>
     <div className='navbar-container'>
-      <Link to="/">
-        <img src="https://i.imgur.com/4xb7ZYr.png" alt="store-logo" width="180px" />
+      <div className='left-container'>
+      <Link to="/" className='logo-container'>
+        <img src="https://www.shareicon.net/data/512x512/2016/11/22/854956_search_512x512.png" alt="store-logo" className='logo'/>Google Store
       </Link>
       <div className='category-container'>
-        <Link to='/products'>All products</Link>
-        <Link to="/">Pixel</Link>
-        <Link to="/">Nest</Link>
-        <Link to="/">Stadia</Link>
-        <Link to="/">Fitbit</Link>
-        <Link to="/">Pixelbook</Link>
+        <Link to='/products' className='category'>All products</Link>
+        <Link to="/" className='category'>Pixel</Link>
+        <Link to="/" className='category'>Nest</Link>
+        <Link to="/" className='category'>Stadia</Link>
+        <Link to="/" className='category'>Fitbit</Link>
+        <Link to="/" className='category'>Pixelbook</Link>
       </div>
+      </div>
+
+      <div className='right-container'>
       <div className='symbol-container'>
-        <Link to="/">
-          <img src="https://i.imgur.com/LIOEOFs.png" alt="question-mark" width="20px" />
+        <Link to="/" className='symbol'>
+          <img src="https://i.imgur.com/LIOEOFs.png" alt="question-mark" width="18px" />
         </Link>
-        <Link to="/">
-          <img src="https://i.imgur.com/hRoLMcz.png" alt="question-mark" width="20px" />
+        <Link to="/" className='symbol'>
+          <img src="https://i.imgur.com/hRoLMcz.png" alt="question-mark" width="18px" />
         </Link>
-        <Link to="/">
-          <img src="https://i.imgur.com/FqEblwK.png" alt="question-mark" width="20px" />
+        <Link to="/" className='symbol'>
+          <img src="https://i.imgur.com/FqEblwK.png" alt="question-mark" width="18px" />
         </Link>
-      </div>
+        </div>
       {props.currentUser ?
         <>
           <h3 onClick={props.logout} className = "log-out">
@@ -34,9 +39,11 @@ export default function Navbar(props) {
         </>
         :
         <>
-        <Link to='/register'className='register-button'>Register</Link>
+        <Link to='/register'className='category'>Register</Link>
         </>
       }
+      </div>
+      </div>
     </div>
   )
 }

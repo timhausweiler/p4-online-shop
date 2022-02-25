@@ -9,3 +9,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.navbar-container {
+  display: flex;
+  width: 100%;
+  max-width: 1300px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.symbol-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.category {
+  margin: 10px;
+  color: #4a4a4a;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 80;
+}
+
+.left-container {
+  display: flex;
+  align-items: center;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+}
+
+.master-navbar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.symbol {
+  margin: 10px;
+}
+
+.log-out {
+  margin: 10px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #4a4a4a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: 0.5px;
+}
+
+.logo {
+  width: 20px;
+  padding: 10px;
+}
