@@ -31,8 +31,17 @@ function App() {
       <Routes>
         <Route path='/' element={
           <>
-            <img src="https://i.imgur.com/oBzbXfa.png" />
-            <h1>Welcome!!</h1>
+            <div className='banner-master-container'>
+            <div className='banner-container'>
+              <div className='banner-text-container'>
+                <h1>The new Pixel 6 phones are here.</h1>
+                <p>Powered by Google Tensor, Google’s first custom-built processor, they’re fast and secure. And they adapt to you.</p>
+                <button>Learn more</button>
+              </div>
+              <img src="https://i.imgur.com/oBzbXfa.png" />
+            </div>
+            </div>
+            <h2>New on the Google Store.</h2>
           </>} />
         <Route path='/login' element={<Login setCurrentUser={setCurrentUser}/>} />
         <Route path='/register' element={<Register setCurrentUser={setCurrentUser}/>} />
