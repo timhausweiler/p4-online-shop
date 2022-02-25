@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { registerUser } from '../services/users'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export default function Register(props) {
   const [username, setUsername] = useState('')
@@ -12,7 +13,7 @@ export default function Register(props) {
   const navigate = useNavigate()
 
   return (
-
+  <>
     <form onSubmit={async (e) => {
       e.preventDefault()
       const user = {
@@ -33,6 +34,8 @@ export default function Register(props) {
       <input type='text' onChange={(e) => setEmail(e.target.value) } value={email} />
       <input type='password' onChange={ (e) => setPassword(e.target.value)} value={password} />
       <button>Sign Up</button>
-    </form>
+      </form>
+      Already have an account? Log in <Link to= "/login" >here</Link>.
+  </>
   )
 }

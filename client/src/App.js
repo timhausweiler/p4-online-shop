@@ -29,7 +29,11 @@ function App() {
     <div className="App">
       <Navbar currentUser={currentUser} logout={logout}/>
       <Routes>
-        <Route path='/' element={<h1>HELLO!!</h1>} />
+        <Route path='/' element={
+          <>
+            <img src="https://i.imgur.com/oBzbXfa.png" />
+            <h1>Welcome!!</h1>
+          </>} />
         <Route path='/login' element={<Login setCurrentUser={setCurrentUser}/>} />
         <Route path='/register' element={<Register setCurrentUser={setCurrentUser}/>} />
         <Route path='/products/*' element={<ProductsContainer currentUser={currentUser}/>} />
