@@ -53,15 +53,6 @@ export default function ProductDetail(props) {
                 <button className="buy-button">Buy</button>
               </div>
             </div>
-            {/* {
-                props.currentUser?.id === product.user_id ?
-                <>
-                <Link to={`/products/${product.id}/edit`}><button>Edit</button></Link>
-                <button onClick={() => props.handleDelete(product.id)}>Delete</button>
-                </>
-                :
-                null
-              } */}
           </>
         ) : (
           <h3>Sorry, no product found.</h3>
@@ -77,12 +68,22 @@ export default function ProductDetail(props) {
             currentUser={props.currentUser}
             handleReviewDelete={handleReviewDelete}
           />
-          <span
-            onClick={(e) => setOpenToggle((prevToggle) => !prevToggle)}
-            className="review-opener"
-          >
-            Are you a fan too? Leave a review.
-          </span>
+          {props.currentUser ? (
+            reviews.some(
+              (review) => review.user.id === props.currentUser.id
+            ) ? null : (
+              <span
+                onClick={(e) => setOpenToggle((prevToggle) => !prevToggle)}
+                className="review-opener"
+              >
+                Are you a fan too? Leave a review.
+              </span>
+            )
+          ) : (
+            <Link to="/register" style={{ textDecoration: "none" }}>
+              <span>Are you a fan too? Register to leave a comment.</span>
+            </Link>
+          )}
         </>
       ) : null}
       {openToggle ? (
@@ -94,3 +95,14 @@ export default function ProductDetail(props) {
     </div>
   );
 }
+
+// {
+//   reviews.some((review) => review.user.id === props.currentUser.id) ? null : (
+//     <span
+//       onClick={(e) => setOpenToggle((prevToggle) => !prevToggle)}
+//       className="review-opener"
+//     >
+//       Are you a fan too? Leave a review.
+//     </span>
+//   );
+// }
