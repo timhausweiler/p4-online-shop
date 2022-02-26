@@ -8,10 +8,12 @@ export default function Reviews(props) {
           <div key={review.id}>
             <p>
               <span>
-                {review.title} ({review.stars} stars)
+                {review.title} ({review.stars} stars):
               </span>
-              : {review.content} ({review.user.first_name}{" "}
-              {review.user.last_name.charAt(0)}.){" "}
+              <br />
+              {review.content}
+              <br /> ({review.user.first_name} {review.user.last_name.charAt(0)}
+              .)
             </p>
             {props.currentUser?.id === review.user_id ? (
               <p>
@@ -21,6 +23,7 @@ export default function Reviews(props) {
                 or <span>edit</span> review
               </p>
             ) : null}
+            <br />
           </div>
         ))}
     </div>
