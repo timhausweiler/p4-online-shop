@@ -262,3 +262,11 @@ span {
   width: 1300px;
   text-align: center;
 }
+
+.user-input-field {
+  border: 1px solid rgb(211, 211, 211);
+  font-family: "Product Sans", sans-serif;
+  width: 300px;
+  text-align: center;
+  border-radius: 5%;
+}

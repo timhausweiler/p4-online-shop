@@ -29,39 +29,48 @@ export default function Register(props) {
           navigate("/");
         }}
       >
+        <h2>Create your account.</h2>
+        Already have an account? Log in <Link to="/login">here</Link>.
+        <br />
+        <h5>Username</h5>
         <input
           type="text"
           onChange={(e) => setUsername(e.target.value)}
           value={username}
-          className="register-input-field"
+          className="user-input-field"
         />
+        <h5>First Name</h5>
         <input
           type="text"
           onChange={(e) => setFirstName(e.target.value)}
           value={firstName}
-          className="register-input-field"
+          className="user-input-field"
         />
+        <h5>Last Name</h5>
         <input
           type="text"
           onChange={(e) => setLastName(e.target.value)}
           value={lastName}
-          className="register-input-field"
+          className="user-input-field"
         />
+        <h5>Email</h5>
         <input
           type="text"
           onChange={(e) => setEmail(e.target.value)}
           value={email}
-          className="register-input-field"
+          className="user-input-field"
         />
+        <h5>Password</h5>
         <input
           type="password"
           onChange={(e) => setPassword(e.target.value)}
           value={password}
-          className="register-input-field"
+          className="user-input-field"
         />
+        <br />
+        <br />
         <button>Sign Up</button>
       </form>
-      Already have an account? Log in <Link to="/login">here</Link>.
     </>
   );
 }
