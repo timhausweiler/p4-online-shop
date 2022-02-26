@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { deleteProduct } from "../services/products";
 import { useNavigate } from "react-router-dom";
 
 export default function ProductEdit(props) {
@@ -11,10 +10,6 @@ export default function ProductEdit(props) {
 
   const navigate = useNavigate();
   const { id } = useParams();
-  const handleProductDelete = async (review_id) => {
-    await deleteProduct(id, review_id);
-    navigate("/products");
-  };
 
   useEffect(() => {
     const foundProduct = props.products.find((product) => {
@@ -73,7 +68,7 @@ export default function ProductEdit(props) {
         <br />
         <br />
         <button>Save</button>
-        <p onClick={(e) => handleProductDelete(id)}>Delete</p>
+        <p onClick={(e) => props.handleDelete(id)}>Delete</p>
       </form>
     </>
   );

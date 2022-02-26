@@ -50,7 +50,7 @@ export default function ProductDetail(props) {
               <p>{product.description}</p>
               <div className="checkout-info">
                 <h3 className="detail-price">${product.price}</h3>
-                {product.user_id === props.currentUser?.id ? (
+                {product?.user_id === props.currentUser?.id ? (
                   <Link to={`/products/${product.id}/edit`}>
                     <button>Edit</button>
                   </Link>
