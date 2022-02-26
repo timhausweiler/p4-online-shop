@@ -16,12 +16,9 @@ export default function Reviews(props) {
               .)
             </p>
             {props.currentUser?.id === review.user_id ? (
-              <p>
-                <span onClick={() => props.handleReviewDelete(review.id)}>
-                  Delete
-                </span>{" "}
-                or <span>edit</span> review
-              </p>
+              <span onClick={() => props.handleReviewDelete(review.id)}>
+                Delete review <br />
+              </span>
             ) : null}
             <br />
           </div>

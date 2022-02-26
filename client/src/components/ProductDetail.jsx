@@ -50,6 +50,7 @@ export default function ProductDetail(props) {
               <p>{product.description}</p>
               <div className="checkout-info">
                 <h3 className="detail-price">${product.price}</h3>
+                <Link to="/">Edit</Link>
                 <button className="buy-button">Buy</button>
               </div>
             </div>
