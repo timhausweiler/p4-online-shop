@@ -255,3 +255,10 @@ button {
 span {
   font-weight: 1000;
 }
+
+.input-field {
+  border: 0;
+  font-family: "Product Sans", sans-serif;
+  width: 1300px;
+  text-align: center;
+}

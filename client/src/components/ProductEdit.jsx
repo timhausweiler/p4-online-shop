@@ -22,39 +22,52 @@ export default function ProductEdit(props) {
   }, [id, props.products]);
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        const product = {
-          title,
-          price,
-          description,
-          image_url,
-        };
-        props.handleEdit(id, product);
-      }}
-    >
-      <input
-        type="text"
-        onChange={(e) => setTitle(e.target.value)}
-        value={title}
-      />
-      <input
-        type="number"
-        onChange={(e) => setPrice(e.target.valueAsNumber)}
-        value={price}
-      />
-      <input
-        type="text"
-        onChange={(e) => setDescription(e.target.value)}
-        value={description}
-      />
-      <input
-        type="text"
-        onChange={(e) => setImage_url(e.target.value)}
-        value={image_url}
-      />
-      <button>Edit</button>
-    </form>
+    <>
+      <h2>Edit your product.</h2>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          const product = {
+            title,
+            price,
+            description,
+            image_url,
+          };
+          props.handleEdit(id, product);
+        }}
+      >
+        <input
+          type="text"
+          onChange={(e) => setTitle(e.target.value)}
+          value={title}
+          className="input-field"
+        />{" "}
+        <input
+          type="number"
+          onChange={(e) => setPrice(e.target.valueAsNumber)}
+          value={price}
+          className="input-field"
+        />
+        <input
+          type="text"
+          onChange={(e) => setDescription(e.target.value)}
+          value={description}
+          className="input-field"
+        />
+        <br />
+        <img src={image_url} className="detail-image" />
+        <br />
+        <input
+          type="text"
+          onChange={(e) => setImage_url(e.target.value)}
+          value={image_url}
+          className="input-field"
+        />
+        <br />
+        <br />
+        <button>Save</button>
+        <p>Delete</p>
+      </form>
+    </>
   );
 }
