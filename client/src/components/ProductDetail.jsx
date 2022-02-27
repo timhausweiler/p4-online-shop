@@ -104,14 +104,3 @@ export default function ProductDetail(props) {
     </div>
   );
 }
-
-// {
-//   reviews.some((review) => review.user.id === props.currentUser.id) ? null : (
-//     <span
-//       onClick={(e) => setOpenToggle((prevToggle) => !prevToggle)}
-//       className="review-opener"
-//     >
-//       Are you a fan too? Leave a review.
-//     </span>
-//   );
-// }
