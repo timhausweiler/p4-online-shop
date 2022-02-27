@@ -26,7 +26,6 @@ function App() {
   };
 
   const [products, setProducts] = useState([]);
-  const [toggle, setToggle] = useState(false);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -34,7 +33,7 @@ function App() {
       setProducts(products);
     };
     fetchProducts();
-  }, [toggle]);
+  }, []);
 
   return (
     <div className="App">
@@ -59,7 +58,8 @@ function App() {
                   </div>
                   <img
                     src="https://i.imgur.com/oBzbXfa.png"
-                    className="banner-image"
+                    className="New Pixel phone"
+                    alt="google-logo"
                   />
                 </div>
               </div>

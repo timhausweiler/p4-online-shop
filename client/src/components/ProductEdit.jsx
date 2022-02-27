@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 export default function ProductEdit(props) {
   const [title, setTitle] = useState("");
@@ -8,7 +7,6 @@ export default function ProductEdit(props) {
   const [description, setDescription] = useState("");
   const [image_url, setImage_url] = useState("");
 
-  const navigate = useNavigate();
   const { id } = useParams();
 
   useEffect(() => {
@@ -57,7 +55,7 @@ export default function ProductEdit(props) {
           className="input-field"
         />
         <br />
-        <img src={image_url} className="detail-image" />
+        <img src={image_url} className="detail-image" alt="product image" />
         <br />
         <input
           type="text"
