@@ -6,8 +6,9 @@ export default function Footer() {
       to="https://www.linkedin.com/in/timhausweiler/"
       style={{ textDecoration: "none" }}
       className="preview-title"
+      id="footer-container"
     >
-      Tim Hausweiler (2022)
+      Made by <span>Tim Hausweiler</span> (2022)
     </Link>
   );
 }
