@@ -84,6 +84,14 @@ function App() {
                   ))}
                 </div>
               </div>
+              <div className="register-master-container">
+                <div className="regsiter-container">
+                  <h2 className="register-text-container">
+                    Keep me updated about devices, news, tips, and offers from
+                    the Google Store.
+                  </h2>
+                </div>
+              </div>
             </>
           }
         />

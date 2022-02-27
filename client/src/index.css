@@ -287,3 +287,19 @@ span {
 #footer-container {
   padding: 50px 0 20px 0;
 }
+
+.register-master-container {
+  display: flex;
+  justify-content: center;
+}
+
+.register-container {
+  display: flex;
+  background-color: #d0dce4;
+  align-items: center;
+  max-width: 1300px;
+}
+
+.register-text-container {
+  padding: 100px;
+}
