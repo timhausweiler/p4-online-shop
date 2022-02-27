@@ -36,6 +36,12 @@ code {
   font-weight: 80;
 }
 
+@media only screen and (max-width: 700px) {
+  .category {
+    display: none;
+  }
+}
+
 .left-container {
   display: flex;
   align-items: center;
@@ -81,12 +87,17 @@ code {
 }
 
 .banner-container {
-  background-color: #d0dce4;
   display: flex;
-  flex-direction: row;
+  background-color: #d0dce4;
+  /* flex-direction: row; */
   align-items: center;
-  width: 100;
   max-width: 1300px;
+}
+
+@media only screen and (max-width: 1055px) {
+  .banner-container {
+    flex-direction: column;
+  }
 }
 
 .banner-text-container {
