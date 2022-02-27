@@ -55,7 +55,7 @@ export default function ProductEdit(props) {
           className="input-field"
         />
         <br />
-        <img src={image_url} className="detail-image" alt="product image" />
+        <img src={image_url} className="detail-image" alt="product" />
         <br />
         <input
           type="text"

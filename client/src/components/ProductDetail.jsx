@@ -47,7 +47,7 @@ export default function ProductDetail(props) {
             <img
               src={product.image_url}
               className="detail-image"
-              alt="detailed product image"
+              alt="detailed product"
             />
             <div className="detail-info">
               <h2>{product.title}</h2>
