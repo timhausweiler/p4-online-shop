@@ -66,9 +66,6 @@ function App() {
               <h2>New on the Google Store.</h2>
               <div className="master-preview-container">
                 <div className="preview-container">
-                  {/* { props.currentUser &&
-        <Link to='/products/create'>Create A Product!!</Link>
-      } */}
                   {products.map((product) => (
                     <Link
                       key={product.id}
