@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Sort from "./Sort";
 
 export default function Products(props) {
   return (
