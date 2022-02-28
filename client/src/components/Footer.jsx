@@ -25,6 +25,7 @@ export default function Footer() {
         style={{ textDecoration: "none" }}
         className="preview-title footer"
         target="_blank"
+        rel="noreferrer"
       >
         Made by <span>Tim Hausweiler</span> (2022)
       </a>
