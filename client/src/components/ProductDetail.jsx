@@ -17,7 +17,7 @@ export default function ProductDetail(props) {
   const { id } = useParams();
 
   useEffect(() => {
-    const foundProduct = props.products.find((product) => {
+    const foundProduct = props.searchResult.find((product) => {
       return product.id === parseInt(id);
     });
 
