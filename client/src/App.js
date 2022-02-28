@@ -96,7 +96,9 @@ function App() {
                     Keep me updated about devices, news, tips, and offers from
                     the Google Store.
                   </h2>
-                  <button className="register-button">Sign up</button>
+                  <Link to={`/register`}>
+                    <button className="register-button">Sign up</button>
+                  </Link>
                 </div>
               </div>
             </>
