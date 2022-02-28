@@ -6,10 +6,10 @@ import Search from "./Search";
   return (
     <div className="master-card-container">
       <h2>Browse all offers.</h2>
-      <Search />
-      <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+      <Search onSubmit={props.handleSubmit} handleSearch={props.handleSearch} />
+      <Sort onSubmit={props.handleSubmit} handleSort={props.handleSort} />
       <div className="card-container">
-        {props.products.map((product) => (
+        {props.searchResult.map((product) => (
           <Link
             key={product.id}
             to={`/products/${product.id}`}
