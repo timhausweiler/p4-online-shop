@@ -285,8 +285,9 @@ span {
   border-radius: 5%;
 }
 
-#footer-container {
-  margin: 150px 0 20px 0;
+.footer {
+  text-align: center;
+  margin: 500px;
 }
 
 .register-master-container {
