@@ -6,6 +6,7 @@ import {
   updateProduct,
 } from "../services/products";
 import { createProduct } from "../services/products";
+import { AZ, ZA, lowestFirst, highestFirst } from "../utils/sort";
 
 import ProductDetail from "./ProductDetail";
 import Products from "./Products";
@@ -23,8 +24,8 @@ export default function ProductsContainer(props) {
   useEffect(() => {
     const fetchProducts = async () => {
       const products = await getAllProducts();
-      setProducts(allProducts);
-      setSearchResult(allProducts);
+      setProducts(products);
+      setSearchResult(products);
     };
     fetchProducts();
   }, [toggle]);
@@ -91,7 +92,7 @@ export default function ProductsContainer(props) {
           path="/"
           element={
             <Products
-              products={products}
+              searchResult={searchResult}
               currentUser={props.currentUser}
               handleDelete={handleDelete}
               onSubmit={handleSubmit}
@@ -104,7 +105,6 @@ export default function ProductsContainer(props) {
           path="/:id"
           element={
             <ProductDetail
-              // products={products}
               searchResult={searchResult}
               handleDelete={handleDelete}
               currentUser={props.currentUser}
