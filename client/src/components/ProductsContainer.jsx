@@ -82,6 +82,8 @@ export default function ProductsContainer(props) {
     setApplySort(true);
   };
 
+  const handleSubmit = (event) => event.preventDefault();
+
   return (
     <div>
       <Routes>
