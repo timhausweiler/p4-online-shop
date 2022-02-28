@@ -53,21 +53,19 @@ export default function ProductsContainer(props) {
       setSortType(type);
     }
     switch (type) {
+      case "sort-by":
+        break;
       case "name-ascending":
         setSearchResult(AZ(searchResult));
-        console.log(searchResult);
         break;
       case "name-descending":
         setSearchResult(ZA(searchResult));
-        console.log(searchResult);
         break;
       case "price-ascending":
         setSearchResult(lowestFirst(searchResult));
-        console.log(searchResult);
         break;
       case "price-descending":
         setSearchResult(highestFirst(searchResult));
-        console.log(searchResult);
         break;
       default:
         break;
