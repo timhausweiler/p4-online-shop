@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Sort from "./Sort";
+import Search from "./Search";
 
   return (
     <div className="master-card-container">
       <h2>Browse all offers.</h2>
+      <Search />
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="card-container">
         {props.products.map((product) => (
