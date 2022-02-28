@@ -14,13 +14,17 @@ import ProductEdit from "./ProductEdit";
 
 export default function ProductsContainer(props) {
   const [products, setProducts] = useState([]);
+  const [searchResult, setSearchResult] = useState([]);
+  const [applySort, setApplySort] = useState(false);
+  const [sortType, setSortType] = useState("name-ascending");
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchProducts = async () => {
       const products = await getAllProducts();
-      setProducts(products);
+      setProducts(allProducts);
+      setSearchResult(allProducts);
     };
     fetchProducts();
   }, [toggle]);
