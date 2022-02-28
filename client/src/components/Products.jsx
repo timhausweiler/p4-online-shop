@@ -3,6 +3,27 @@ import { Link } from "react-router-dom";
 import Sort from "./Sort";
 
 export default function Products(props) {
+  const handleSort = (type) => {
+    if (type !== "" && type !== undefined) {
+      setSortType(type);
+    }
+    switch (type) {
+      case "name-ascending":
+        setSearchResult(AZ(searchResult));
+        break;
+      case "name-descending":
+        setSearchResult(ZA(searchResult));
+        break;
+      case "price-ascending":
+        setSearchResult(lowestFirst(searchResult));
+        break;
+      case "price-descending":
+        setSearchResult(highestFirst(searchResult));
+        break;
+      default:
+        break;
+    }
+  };
   const handleSubmit = (event) => event.preventDefault();
 
   return (
