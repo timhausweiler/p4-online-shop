@@ -6,9 +6,6 @@ export default function Products(props) {
     <div className="master-card-container">
       <h2>Browse all offers.</h2>
       <div className="card-container">
-        {/* { props.currentUser &&
-        <Link to='/products/create'>Create A Product!!</Link>
-      } */}
         {props.products.map((product) => (
           <Link
             key={product.id}
