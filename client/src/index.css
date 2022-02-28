@@ -319,7 +319,12 @@ span {
   border: rgb(87, 132, 255) solid 2px;
 }
 
-.search-input {
+/* .search-input {
   border: none;
   text-align: center;
+} */
+
+.sort {
+  margin: 0 0 20px 0;
+  border: none;
 }
