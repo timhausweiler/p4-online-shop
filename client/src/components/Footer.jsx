@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <Link
-      to="https://www.linkedin.com/in/timhausweiler/"
+    <a
+      href="https://www.linkedin.com/in/timhausweiler/"
       style={{ textDecoration: "none" }}
-      className="preview-title"
+      class="preview-title"
       id="footer-container"
+      target="_blank"
     >
       Made by <span>Tim Hausweiler</span> (2022)
-    </Link>
+    </a>
   );
 }
