@@ -69,6 +69,11 @@ export default function ProductsContainer(props) {
     }
   };
 
+  if (applySort) {
+    handleSort(sortType);
+    setApplySort(false);
+  }
+
   return (
     <div>
       <Routes>
