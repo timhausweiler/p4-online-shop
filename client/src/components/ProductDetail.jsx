@@ -27,7 +27,7 @@ export default function ProductDetail(props) {
     };
     fetchReviews();
     setProduct(foundProduct);
-  }, [id, props.products, toggle]);
+  }, [id, props.searchResult, toggle]);
 
   const handleReviewCreate = async (formData) => {
     await createReview(id, formData);
