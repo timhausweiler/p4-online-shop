@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Sort from "./Sort";
-import Search from "./Search";
+// import Search from "./Search";
 
 export default function Products(props) {
   return (
     <div className="master-card-container">
       <h2>Browse all offers.</h2>
-      <Search onSubmit={props.handleSubmit} handleSearch={props.handleSearch} />
+      {/* <Search onSubmit={props.handleSubmit} handleSearch={props.handleSearch} /> */}
       <Sort onSubmit={props.handleSubmit} handleSort={props.handleSort} />
       <div className="card-container">
         {props.searchResult.map((product) => (
