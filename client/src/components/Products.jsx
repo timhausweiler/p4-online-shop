@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Sort from "./Sort";
 
 export default function Products(props) {
+  const handleSubmit = (event) => event.preventDefault();
+
   return (
     <div className="master-card-container">
       <h2>Browse all offers.</h2>
