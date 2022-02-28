@@ -81,7 +81,7 @@ export default function ProductsContainer(props) {
 
   const handleSearch = (event) => {
     const results = products.filter((product) =>
-      product.name.toLowerCase().includes(event.target.value.toLowerCase())
+      product.title.toLowerCase().includes(event.target.value.toLowerCase())
     );
     setSearchResult(results);
     setApplySort(true);
