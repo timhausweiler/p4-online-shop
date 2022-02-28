@@ -318,3 +318,8 @@ span {
   color: rgb(87, 132, 255);
   border: rgb(87, 132, 255) solid 2px;
 }
+
+.search-input {
+  border: none;
+  text-align: center;
+}
