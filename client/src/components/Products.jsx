@@ -2,14 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Sort from "./Sort";
 
-export default function Products(props) {
-  const handleSort = (type) => {
-    if (type !== "" && type !== undefined) {
-      setSortType(type);
-    }
-  };
-  const handleSubmit = (event) => event.preventDefault();
-
   return (
     <div className="master-card-container">
       <h2>Browse all offers.</h2>
