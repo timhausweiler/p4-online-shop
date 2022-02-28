@@ -94,6 +94,9 @@ export default function ProductsContainer(props) {
               products={products}
               currentUser={props.currentUser}
               handleDelete={handleDelete}
+              onSubmit={handleSubmit}
+              handleSearch={handleSearch}
+              handleSort={handleSort}
             />
           }
         />
@@ -101,7 +104,8 @@ export default function ProductsContainer(props) {
           path="/:id"
           element={
             <ProductDetail
-              products={products}
+              // products={products}
+              searchResult={searchResult}
               handleDelete={handleDelete}
               currentUser={props.currentUser}
             />
