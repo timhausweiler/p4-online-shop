@@ -17,7 +17,7 @@ export default function ProductsContainer(props) {
   const [products, setProducts] = useState([]);
   const [searchResult, setSearchResult] = useState([]);
   const [applySort, setApplySort] = useState(false);
-  const [sortType, setSortType] = useState("name-ascending");
+  const [sortType, setSortType] = useState("");
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate();
 
